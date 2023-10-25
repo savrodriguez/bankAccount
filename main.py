@@ -37,3 +37,8 @@ def getBalance(self):
 # Print Statement
 def printStatement(self):
     print(f"{self.name}\nAccount No.: ****{self.account_number[-4:]}\nBalance: ${self.balance:.2f}")
+
+# Add Interest 
+def interest(self):
+    interest = self.balance * 0.00083
+    self.balance += interest
