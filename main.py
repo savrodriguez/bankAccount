@@ -29,3 +29,11 @@ def withdrawl(self, amount):
         self.balance -= 10
         print(f"Overdraft fee of $10 has been charged!")
 
+# Getting Balance
+def getBalance(self):
+    print(f"Balance: ${self.balance:.2f}")
+    return self.balance
+
+# Print Statement
+def printStatement(self):
+    print(f"{self.name}\nAccount No.: ****{self.account_number[-4:]}\nBalance: ${self.balance:.2f}")
